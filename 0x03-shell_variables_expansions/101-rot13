@@ -1,2 +1,2 @@
 #!/bin/bash
-tr ASCII "NFOVV"
+tr ASCII "NFPVV"
