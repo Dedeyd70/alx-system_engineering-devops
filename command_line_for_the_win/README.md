@@ -1,0 +1,1 @@
+CMDCHALLENGE is an engaging game that tests your Bash skills through command line tasks of increasing complexity. It provides a practical and enjoyable way to enhance your proficiency with command line operations, helping you become more adept at using the command line interface
