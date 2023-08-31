@@ -12,7 +12,7 @@ do
   while [ $mins -le 59 ]
   do
     echo "$mins"
-    mins=$((mins+1))
+    (( mins++ ))
   done
-  hr=$((hr+1))
+  (( hr++ ))
 done
