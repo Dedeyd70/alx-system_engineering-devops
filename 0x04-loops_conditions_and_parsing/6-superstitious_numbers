@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# This script uses the while loop from 1 to 20 to display with case statment;
+# bad luck from china for the 4th iteration
+# bad luck from japan for the 9th iteration
+# bad luck from italy for the 17th iteration
+
+num=1
+
+while [ $num -le 20 ]
+do
+	case $num in
+		4)
+			echo "$num"
+			echo "bad luck from China"
+			;;
+		9)
+			echo "$num"
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "$num"
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo "$num"
+			;;
+		esac
+		(( num++ ))
+done
+	
