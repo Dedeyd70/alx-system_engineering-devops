@@ -7,7 +7,7 @@ hr=0
 
 while [ $hr -le 12 ]
 do
-  echo "hour: $hr"
+  echo "hr: $hr"
   mins=1
   while [ $mins -le 59 ]
   do
