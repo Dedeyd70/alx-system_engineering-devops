@@ -7,12 +7,12 @@ hr=0
 
 while [ $hr -le 12 ]
 do
-	mins=1
-	echo "hour: $hr"
-	while [ $mins -le 59 ]
-	do
-		echo "$mins"
-		mins=$((mins+1))
-	done
-	hr=$((hr+1))
+  echo "hour: $hr"
+  mins=1
+  while [ $mins -le 59 ]
+  do
+    echo "$mins"
+    mins=$((mins+1))
+  done
+  hr=$((hr+1))
 done
