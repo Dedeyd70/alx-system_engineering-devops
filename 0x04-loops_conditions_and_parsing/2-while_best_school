@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script utilizes two variables in a while loop
+
+num=0
+max=10
+
+while [ $num -lt $max ]
+do
+	echo "Best School"
+	((num++))
+done
+
