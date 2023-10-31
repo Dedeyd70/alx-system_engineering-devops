@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Configuring the Nginx server with redirections.
+
+sudo apt-get update
+sudo apt-get install -y nginx
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+custom_config="server_name _;\n\ttrewrite^\/redirect_me https:\/\/github.com\/Dedeyd70 permanent;"
+
+sudo sed -i "s/server_name _;/$custom_config/" /etc/nginx/sites-enabled/default
+
+sudo service nginx restart
