@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# setting up the 404 page
+
+sudo apt-get update
+sudo apt-get -y nginx
+
+echo "Hello Wolrd!" | sudo tee /var/www/html/index.html
+
+custom_config="server_name _;\n\ttrewrite^\/redirect_me https:\/\/github.com\/Dedeyd70 permanent;"
+
+sudo sed -i "s/server_name _;/$custom_config/" /etc/nginx/sites-enabled/default
+
+#creating a 404 page
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+
+custom_config="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\tinternal;\n\t}"
+
+sudo sed -i "s/listen 80 default_server;/$custom_config/" /etc/nginx/sites-enabled/default
+
+sudo service nginx restart
