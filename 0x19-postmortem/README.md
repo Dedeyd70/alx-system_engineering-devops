@@ -1,4 +1,4 @@
-#Summary: Email Communication Disruption
+Summary: Email Communication Disruption
 
                         Timeline
 
