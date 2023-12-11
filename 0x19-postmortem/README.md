@@ -1,5 +1,10 @@
-Summary: Email Communication Disruption
+Postmortem: Email Communication Disruption
+
 ![my image](./Network-Diagram.png)
+
+
+Issue summary: Our organization faced a significant disruption in email communication. Users reported an inability to send or receive emails, prompting immediate attention
+
 
 
                         Timeline
@@ -8,7 +13,7 @@ Detection Time:   11th December 2023, 10:30am
 
 Detection Method: The issue was detected when several employees reported an inability to send or receive emails. The corporate email server appeared unresponsive.
 
-Actions Taken: The incident response team promptly initiated an investigation into the email server logs and network infrastructure.
+Actions Taken: The incident response team promptly initiated an investigation into the email server logs and network infrastructure. 
 Initial assumptions were that this might be a localized connectivity issue or an error in the email server configuration.
 
 Misleading Paths: Investigations initially focused on potential server hardware failures, leading to temporary diversions from the actual root cause related to network misconfigurations.
@@ -36,8 +41,7 @@ Implement additional monitoring checks for real-time detection of network routin
 Medium-Term: Review and update documentation for network configurations to improve transparency and knowledge sharing.
 Conduct training sessions for network administrators on best practices for maintaining and updating routing tables.
 
-Long-Term:Evaluate the feasibility of implementing redundant network paths to ensure continuity of critical communication services.
+Long-Term:Evaluate the feasibility of implementing redundant network paths to ensure continuity of critical communication services.  
 Establish a recurring schedule for proactive review and update of network configurations across the entire infrastructure.
-
 
 Conclusion: The email disruption incident was a stark reminder of the intricate web that is our network infrastructure. By dissecting the incident, we not only fix what went wrong but fortify our defenses against potential disruptions in the future.
