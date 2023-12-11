@@ -1,4 +1,6 @@
 Summary: Email Communication Disruption
+![my image](./Network-Diagram.png)
+
 
                         Timeline
 
@@ -36,3 +38,6 @@ Conduct training sessions for network administrators on best practices for maint
 
 Long-Term:Evaluate the feasibility of implementing redundant network paths to ensure continuity of critical communication services.
 Establish a recurring schedule for proactive review and update of network configurations across the entire infrastructure.
+
+
+Conclusion: The email disruption incident was a stark reminder of the intricate web that is our network infrastructure. By dissecting the incident, we not only fix what went wrong but fortify our defenses against potential disruptions in the future.
